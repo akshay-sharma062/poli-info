@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candidate Information</title>
+
+    <link rel="stylesheet" href="../css/civillines2.css">
+</head>
+<body>
+    <button onclick="goBack()" class="back-button">⬅ Back</button>
+    <div class="container">
+        <!-- Left Section for Info and Year Selection -->
+        <div class="left-section">
+            <!-- Candidate Info for 2024 -->
+            <div class="info" id="candidate2024">
+                <p>Gopal Sharma (born 5 March 1959) is an Indian politician serving as a member of the 16th Rajasthan Assembly,[1] he is a member of the Bharatiya Janata Party, and represents the Civil Lines Assembly constituency from Jaipur district. 
+                    Following the 2023 Rajasthan Legislative Assembly election,[3] he was elected as MLA from the Civil Lines assembly constituency, defeating Pratap Singh Khachariyawas, the candidate from the Indian National Congress (INC), by a margin of 28,329 votes. </p></div>
+            <!-- Candidate Info for 2019 -->
+            <div class="info" id="candidate2019" style="display: none;">
+                <p> Pratap Singh Khachariyawas (प्रताप सिंह खाचरियावास; born 16 May 1969) is an Indian National Congress politician, who was former Cabinet Minister of Food & Civil Supplies and Consumer affairs in Government of Rajasthan. He is also one of the Cabinet Ministers in the government, under Ashok Gehlot. He has held the post of the spokesperson of Rajasthan Pradesh Congress Committee and president of Jaipur Congress since 2015, previously he served as a Member of the Legislative Assembly of Civil Lines.
+                    He belongs to the Rajput community.[1] He was born on 16 May 1969 in Jodhpur. He is the son of Laxman Singh Shekhawat and Himmat Kanwar and completed his school education from Adarsh Vidya Mandir, Kishangarh Renewal and later from Tagore Vidya Bhavan, Jaipur 9th to 11th studied in Maheshwari Higher Secondary School, Jaipur. Apart from this, he has completed MA in political science and LLB, Rajasthan college BA and MA from Rajasthan University Jaipur.
+                    He is the nephew of ex-vice president Bhairon Singh Shekhawat.[2] He is married to Neeraj Kanwar and has two sons Aditya Vardhan and Krishna Vardhan. Currently he is living at M-13 Madram Pura Civil Lines, Jaipur with his family.[3]
+                    He started his political career as an independent President of University of Rajasthan (1992–93); He was also a member of legislative assembly from Civil Lines, Jaipur (2008–13). Currently, he is cabinet minister in Rajasthan government and state spokesperson of Rajasthan Pradesh Congress Committee and president of Jaipur.[4]
+                    2008–13, member Rajasthan Legislative Assembly from Civil Lines Vidhan Sabha.
+                    2018- 2023, member Rajasthan legislative assembly from Civil Lines Vidhan Sabha. </p></div>
+            <!-- Candidate Info for 2014 -->
+            <div class="info" id="candidate2014" style="display: none;">
+                <p> Dr. Arun Chaturvedi is an India politician of Bharatiya Janata Party in 2013 Rajasthan Legislative Assembly election and has been minister of Social Justice and Empowerment, General Administration, Motor Garage, Minority Affairs, Printing and Stationery, Estate Department, Government of Rajasthan, Jaipur.[1]
+
+                    1978 Higher Secondary Education, Adarsh Vidya Mandir, Adarsh Nagar, Jaipur.
+                    1981 Bachelor of Commerce, Commerce College Jaipur and M.Com in Commerce in 1985 (gold medalist).
+                    Bachelor of Law in 1986, University of Rajasthan, Jaipur. He has Ph.D.
+                    He worked as Professor for five years from 1985. Bhartiya Janta Yuva Morcha as State Minister and State Vice President from 1988–1998. He was in charge of the newly formed Media Cell in BJP in 1991. He received the title of director in 1992. He served as the state secretary of the Bharatiya Janata Party, Rajasthan from 1998–2004. He has been a permanent advocate of the Central Government in the state from 2003–2004, Rajasthan High Court, Jaipur Bench, Jaipur has been a permanent advocate in various departments. He held the post of training in-charge of Bharatiya Janata Party Organization in 2004. He held the responsibility of the State General Secretary of Bharatiya Janata Party, Rajasthan from 2004 to 2009. He held the responsibility of State President of Bharatiya Janata Party from 2009 to 2012. In 2013 he won from the Civil Lines Constituency and was Minister in Government of Rajasthan for Social Justice and Empowerment and six other departments. In 2019 he was appointed as National Co-Convener of BJP-Membership Drive by Shri Amit Shah(National President-BJP) He is the member of Brij Bhasha Academy.[2]
+                    2013-18 Member Rajasthan Legislative Assembly from Civil Lines Vidhansabha.</p> </div>
+
+            <!-- Year Selection Buttons -->
+            <div class="year-selection">
+                <button id="can2024">2023-2024</button>
+                <button id="can2019">2018-2019</button>
+                <button id="can2014">2013-2014</button>
+            </div>
+           
+            <div class="comments">
+                <label for="comments">Comments:</label><br>
+<textarea id="commentInput" name="comments" rows="3" cols="10" placeholder="Enter your comments here..."></textarea><br>
+<div class="second-buttons">
+<button onclick="submitComment()">SUBMIT</button>
+</div>
+<div class="box">
+    <div id="commentBox"></div>
+
+</div>
+
+            </div>
+        </div>
+
+        <!-- Right Section for Image, Name, Party, and Vote Percentage -->
+        <div class="right-section">
+            <div class="image">
+                <div class="box1">
+                    <img src="../images/civil lines.png">
+                </div>
+                <img class="red" src="../images/Gopal Sharma.png" alt="Candidate-Image" id="Image">
+                    </div>
+            <div class="name" id="name">Gopal Sharma</div>
+            <div class="party" id="party">(BJP)</div>
+            <div class="vote-percentage" id="voteper">
+                <table>
+                    <tr><th>Party</th><th>Vote %</th></tr>
+                    <tr><td>INC</td><td>56.89%</td></tr>
+                    <tr><td>BJP</td><td>40.55%</td></tr>
+                    <tr><td>Other</td><td>0.00%</td></tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="../JS files/civillines3.js"></script>
+</body>
+</html>

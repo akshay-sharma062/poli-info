@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candidate Information</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nabla&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/candidates.css">
+</head>
+<body>
+    <button onclick="goBack()" class="back-button">⬅ Back</button>
+    <div class="container">
+        <!-- Left Section for Info and Year Selection -->
+        <div class="left-section">
+            <!-- Candidate Info for 2024 -- hawa mahel 2023>! -->
+            <div class="info" id="candidate2024">
+                <p>Balmukund Acharya, a BJP candidate from the Hawa Mahal constituency in Jaipur, Rajasthan, won the 2023 Rajasthan Assembly elections by leveraging a strong Hindutva-focused campaign. Known locally as “Baba Bal Mukundachary,” he attracted significant attention both for his political rhetoric and post-election actions, including controversial directives to close non-vegetarian stalls in the area, which stirred debate over his influence and methods. This election marked a major win for Acharya as he defeated INC candidate R.R. Tiwari, reflecting the appeal of his religious and nationalist themes among voters in his constituency
+</p>
+            </div>
+            <!-- Candidate Info for 2019 -->
+            <div class="info" id="candidate2019" style="display: none;">
+                <p>Mahesh Joshi is a prominent Indian politician from Rajasthan, affiliated with the Indian National Congress (INC). He has been active in politics for over three decades and is known as a key leader within the party, especially in Rajasthan. Joshi has served in important roles, including as the Minister of Public Health Engineering and Ground Water in the Rajasthan government in 2021. He has been elected as both an MLA and an MP, showing his significant influence in the state.  Mahesh Joshi is a loyalist of Rajasthan's Chief Minister, Ashok Gehlot, and is closely associated with various social organizations, including the Jai Club and Rambag Golf Club in Jaipur. He has also been the honorary head of the Rajasthan Brahmin Mahasabha since 2022 and supports local sports activities through tournaments in Jaipur.Despite his political achievements, Joshi's career has been marred by controversy. In 2023, he faced accusations of harassment linked to the suicide of a man named Ramprasad Meena, who alleged in a video before his death that he had been mistreated by Joshi and others. These allegations have been under police investigation.Joshi's net worth was estimated at around Rs. 2.5 crores in 2018, and his assets include various properties and movable assets. He also enjoys a notable social status, participating in both local and international activities.
+</p>
+            </div>
+            <!-- Candidate Info for 2014 -->
+            <div class="info" id="candidate2014" style="display: none;">
+                <p> Surendra Pareek is an Indian politician from the Bharatiya Janata Party (BJP), representing the Hawa Mahal constituency in Jaipur, Rajasthan. Born on October 21, 1953, in Jaipur, he holds a B.A. and LL.B. degree. Surendra Pareek is married to Asha Pareek, and they have one son and one daughter. His political career has seen him as an influential figure within the BJP, particularly in his home constituency.He has reported assets worth over Rs 1 crore and liabilities amounting to about Rs 14 lakhs. Pareek father, Late Sitaram Pareek, was also known in the local community. He has remained actively involved in local and state politics, with his most recent public details available from his affidavit filed during elections
+</p>
+            </div>
+
+            <!-- Year Selection Buttons -->
+            <div class="year-selection">
+                <button id="can2024">2023-2024</button>
+                <button id="can2019">2018-2019</button>
+                <button id="can2014">2013-2014</button>
+            </div>
+           
+            <div class="comments">
+                <label for="comments">Comments:</label><br>
+<textarea id="comments" name="comments" rows="3" cols="10" placeholder="Enter your comments here..."></textarea><br>
+<div class="second-buttons">
+<button class="reset">RESET</button><button class="submit">SUBMIT</button>
+</div>
+<div class="box">
+    5 star commented
+</div>
+
+            </div>
+        </div>
+
+         <!-- Right Section for Image, Name, Party, and Vote Percentage -->
+        <div class="right-section">
+            <div class="image">
+                <div class="box1">
+                    <img src="../images/Hawamal.png">
+                </div>
+                <img class="red" src="../images/Balmukundachary.jpg" alt="Candidate Image" id="image">
+            </div>
+            <div class="name" id="name">Balmukundachary</div>
+            <div class="party" id="party">(BJP)</div>
+            <div class="vote-percentage" id="voteper">
+                <table>
+                    <tr><th>Party</th><th>Vote %</th></tr>
+                    <tr><td>INC</td><td>46.92% </td></tr>
+                    <tr><td>BJP</td><td>48.14%-won</td></tr>
+                    <tr><td>Other</td><td>4.94%</td></tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="../JS files/candidate.js"></script>
+</body>
+</html>

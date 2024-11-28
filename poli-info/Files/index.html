@@ -1,0 +1,71 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candidate Information</title>
+
+    <link rel="stylesheet" href="../css/candidates.css">
+</head>
+<body>
+    <button onclick="goBack()" class="back-button">⬅ Back</button>
+    <div class="container">
+        <!-- Left Section for Info and Year Selection -->
+        <div class="left-section">
+            <!-- Candidate Info for 2024 -->
+            <div class="info" id="candidate2024">
+                <p>Rafeek Khan is a dedicated politician from Rajasthan, India, affiliated with the Indian National Congress (INC). Born and raised in Jaipur, he has built a career centered on addressing the needs of marginalized and underrepresented communities in his constituency, Adarsh Nagar. Known for his accessibility and close connection to the local population, Rafeek Khan has established himself as a trusted representative who listens to constituents’ concerns and takes actionable steps to resolve pressing issues.As an MLA, Rafeek Khan has actively championed policies aimed at improving public amenities, infrastructure, and healthcare in Adarsh Nagar. His efforts have included initiatives to address housing challenges, sanitation, and public health, particularly in densely populated and underserved neighborhoods. Khan’s focus on civic infrastructure has led him to push for better roads, drainage systems, and clean water access, improving the quality of life for many residents. His advocacy for affordable housing has helped numerous families gain access to safe and secure homes, addressing one of the most significant challenges in the rapidly growing city of Jaipur.In addition to his work on infrastructure, Khan has emphasized the importance of education and youth empowerment. He has supported programs and policies aimed at improving educational access for children and creating vocational training opportunities for young adults. Through his initiatives, he strives to provide better opportunities for employment and skill development for the youth in his constituency.</p>
+            </div>
+            <!-- Candidate Info for 2019 -->
+            <div class="info" id="candidate2019" style="display: none;">
+                <p>Rafeek Khan is a dedicated politician from Rajasthan, India, affiliated with the Indian National Congress (INC). Born and raised in Jaipur, he has built a career centered on addressing the needs of marginalized and underrepresented communities in his constituency, Adarsh Nagar. Known for his accessibility and close connection to the local population, Rafeek Khan has established himself as a trusted representative who listens to constituents’ concerns and takes actionable steps to resolve pressing issues.As an MLA, Rafeek Khan has actively championed policies aimed at improving public amenities, infrastructure, and healthcare in Adarsh Nagar. His efforts have included initiatives to address housing challenges, sanitation, and public health, particularly in densely populated and underserved neighborhoods. Khan’s focus on civic infrastructure has led him to push for better roads, drainage systems, and clean water access, improving the quality of life for many residents. His advocacy for affordable housing has helped numerous families gain access to safe and secure homes, addressing one of the most significant challenges in the rapidly growing city of Jaipur.In addition to his work on infrastructure, Khan has emphasized the importance of education and youth empowerment. He has supported programs and policies aimed at improving educational access for children and creating vocational training opportunities for young adults. Through his initiatives, he strives to provide better opportunities for employment and skill development for the youth in his constituency.</p>
+            </div>
+            <!-- Candidate Info for 2014 -->
+            <div class="info" id="candidate2014" style="display: none;">
+                <p> Ashok Parnami is a well-regarded politician in Rajasthan, India, representing the Bharatiya Janata Party (BJP). Born on January 4, 1954, in Jaipur, he has built an extensive career within the BJP and has held significant roles both within the party and in the Rajasthan government. Parnami started his political journey at the grassroots level and steadily rose through the ranks, ultimately serving as the State President of the BJP in Rajasthan from 2014 to 2018, a period marked by active party growth and local engagement.His role as BJP State President, Parnami served as a Member of the Rajasthan Legislative Assembly, representing the Adarsh Nagar constituency in Jaipur for two consecutive terms. His involvement in Rajasthan politics also includes his position as Mayor of Jaipur from 2004 to 2008, where he focused on civic improvements and infrastructure development. During his time as mayor, Parnami emphasized urban development and was involved in initiatives aimed at modernizing Jaipur’s city services and amenitiesApart from his political engagements, Parnami has been transparent about his financial assets, declaring assets worth over 26 crore INR, making him one of the prominent leaders in Rajasthan with considerable personal investments and business interests​Throughout his career, he has been a key supporter of the BJP’s policies, particularly at the regional level, where he has advocated for development policies and socio-economic improvements. Known for his dedication to public service, Ashok Parnami remains an influential figure in the BJP's Rajasthan unit and continues to shape political discourse within the state.</p>
+            </div>
+
+            <!-- Year Selection Buttons -->
+            <div class="year-selection">
+                <button id="can2024">2023-2024</button>
+                <button id="can2019">2018-2019</button>
+                <button id="can2014">2013-2014</button>
+            </div>
+           
+            <div class="comments">
+                <label for="comments">Comments:</label><br>
+<textarea id="comments" name="comments" rows="3" cols="10" placeholder="Enter your comments here..."></textarea><br>
+<div class="second-buttons">
+<button class="reset">RESET</button><button class="submit">SUBMIT</button>
+</div>
+<div class="box">
+    5 star commented
+</div>
+
+            </div>
+        </div>
+
+        <!-- Right Section for Image, Name, Party, and Vote Percentage -->
+        <div class="right-section">
+            <div class="image">
+                <div class="box1">
+                    <img src="../images/adarsh-nagar-map.jpeg">
+                </div>
+                <img class="red" src="../images/rafeek-khan.jpg" alt="Candidate Image" id="image">
+            </div>
+            <div class="name" id="name">Rafeek Khan</div>
+            <div class="party" id="party">(INC)</div>
+            <div class="vote-percentage" id="voteper">
+                <table>
+                    <tr><th>Party</th><th>Vote %</th></tr>
+                    <tr><td>INC</td><td>50.78%</td></tr>
+                    <tr><td>BJP</td><td>42.72%</td></tr>
+                    <tr><td>Other</td><td>2.66%</td></tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="../JS files/candidate.js"></script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candidate Information</title>
+
+    <link rel="stylesheet" href="../css/candidates.css">
+</head>
+<body>
+    <button onclick="goBack()" class="back-button">⬅ Back</button>
+    <div class="container">
+        <!-- Left Section for Info and Year Selection -->
+        <div class="left-section">
+            <!-- Candidate Info for 2024 -->
+            <div class="info" id="candidate2024">
+                <p>Bhajan Lal Sharma, born on 15 December 1966 in Atari village near Nadbai in Bharatpur district, Rajasthan, is an Indian politician currently serving as the 14th Chief Minister of Rajasthan. He assumed office in December 2023 as a member of the Bharatiya Janata Party (BJP), representing the Sanganer constituency in the 16th Rajasthan Legislative Assembly. Coming from a Hindu Brahmin family, Sharma is the son of Kishan Swaroop Sharma, a farmer, and Gomati Devi.
+
+                    Sharma's educational journey began in the villages of Atari and Gagwana, followed by secondary schooling in Nadbai. In 1989, he graduated with a Bachelor of Arts from MSJ College, Bharatpur. He then completed a Master’s degree in Political Science in 1993 from the University of Rajasthan and later pursued a Bachelor of Education (B.Ed) degree.
+                    
+                    He is married to Geeta Sharma, and the couple has two sons. His elder son, Abhishek Sharma, is preparing for the UPSC Civil Services Examination and runs a private business, while his younger son, Kunal Sharma, is a doctor with an MBBS degree. On 12 December 2023, the BJP appointed Sharma as the Chief Minister of Rajasthan, alongside two deputy chief ministers, Diya Kumari and Prem Chand Bairwa. He, along with his deputies, took the oath of office on 15 December 2023.                    
+               </p>
+            </div>
+            <!-- Candidate Info for 2019 -->
+            <div class="info" id="candidate2019" style="display: none;">
+                <p>Ashok Lahoti served as the MLA for the Sanganer constituency in Rajasthan, representing the Bharatiya Janata Party (BJP). In the 2018 assembly elections, he won with a vote share of approximately 51.5%, securing 107,947 votes and defeating his closest competitor, Pushpendra Bhardwaj from the Congress, by a margin of 35,405 votes
+                    .
+                    
+                    Lahoti, a businessman by profession, has also been active in public service as a former mayor of Jaipur. His work in Sanganer included infrastructure projects like sewerage systems and water pipelines, vital for the rapidly growing urban area known for its textile industry and other factories</p>
+            </div>
+            <!-- Candidate Info for 2014 -->
+            <div class="info" id="candidate2014" style="display: none;">
+                <p> Ghanshyam Tiwari (born 19 December 1947) is an Indian politician who has served as the MLA of the Sanganer constituency, located in Rajasthan between 2013 and 2018. He is a member of the Bharatiya Janata Party. 6 time MLA Tiwari has been winning for the last three consecutive elections from the same constituency. He is one of the prominent leaders of Rajasthan who have played significant roles in the establishment of the Bharatiya Janata Party.
+                    Ghanshyam Tiwari was born on 19 December 1947 in Sikar Rajasthan. While pursuing the bachelor's degree from Sri Kalyan Sanskrit College, Sikar, he was given the position of general secretary in the Students' Union of the college. After graduating from the Sanskrit college, he came to Jaipur for his L.L.B. In these years he was a member of the University Apex Body. He was also the organizer and Vice President of ABVP.During the emergency in 1975, Tiwari became a full-fledged politician. He fought against the dominating policies of the government. Tiwari got huge support from the people of Rajasthan and became a powerful voice during this period. Due to his fight against the central government, Tiwari was put in jail where he was brutally tortured. Then some national level activists like Jayaprakash Narayan and Atal Bihari Vajpayee started a movement against the government in defense of Tiwari. This was the turning point in Tiwari's political life. He got appreciated by many great leaders of that time and become a recognized face in Rajasthan.
+
+                    Tiwari contested in Rajasthan assembly elections of 1980 from Sikar constituency and Won. He was consecutively Re-elected as MLA for 2 times, 1980–85 and 1985–89.Tiwari was a member of the Janata Party. Due to internal conflicts, a few members separated from the Janata Party and created a new organization called Bharatiya Janata Party on April 6, 1980. Tiwari was one of the founders of the BJP in Rajasthan.
+</p>
+            </div>
+
+            <!-- Year Selection Buttons -->
+            <div class="year-selection">
+                <button id="can2024">2023-2024</button>
+                <button id="can2019">2018-2019</button>
+                <button id="can2014">2013-2014</button>
+            </div>
+           
+            <div class="comments">
+                <label for="comments">Comments:</label><br>
+<textarea id="comments" name="comments" rows="3" cols="10" placeholder="Enter your comments here..."></textarea><br>
+<div class="second-buttons">
+<button class="reset">RESET</button><button class="submit">SUBMIT</button>
+</div>
+<div class="box">
+    5 star commented
+</div>
+
+            </div>
+        </div>
+
+        <!-- Right Section for Image, Name, Party, and Vote Percentage -->
+        <div class="right-section">
+            <div class="image">
+                <div class="box1">
+                    <img src="../images/sanganer.jpg">
+                </div>
+                <img class="red" src="../images/BhajanLalaSharma.png" alt="Candidate Image" id="image">
+            </div>
+            <div class="name" id="name">Bhajan Lal Sharma</div>
+            <div class="party" id="party">(BJP)</div>
+            <div class="vote-percentage" id="voteper">
+                <table>
+                    <tr><th>Party</th><th>Vote %</th></tr>
+                    <tr><td>INC</td><td>58.44%</td></tr>
+                    <tr><td>BJP</td><td>39.08%</td></tr>
+                    <tr><td>Other</td><td>02.48%</td></tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="../JS files/sanganer.js"></script>
+</body>
+</html>

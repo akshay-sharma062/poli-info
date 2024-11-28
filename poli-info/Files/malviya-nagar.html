@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candidate Information</title>
+
+    <link rel="stylesheet" href="candidates.css">
+</head>
+<body>
+    <button onclick="goBack()" class="back-button">⬅ Back</button>
+    <div class="container">
+        <!-- Left Section for Info and Year Selection -->
+        <div class="left-section">
+            <!-- Candidate Info for 2024 -->
+            <div class="info" id="candidate2024">
+                <p>Kalicharan Saraf is a seasoned politician from Rajasthan, India, and a prominent leader within the Bharatiya Janata Party (BJP). With a political career spanning several decades, Saraf has held multiple significant positions in the Rajasthan state government and within his party. Known for his experience and dedication to public service, he has represented the Malviya Nagar constituency in the Rajasthan Legislative Assembly for several terms, demonstrating strong support from his constituency.Saraf has served as a cabinet minister in the Rajasthan government, overseeing key departments such as Health, Medical & Family Welfare, and Education. During his tenure, he focused on improving healthcare infrastructure, expanding educational resources, and implementing public welfare schemes aimed at uplifting the quality of life for residents across Rajasthan. 
+                    Respected for his approachability and commitment to his constituents, Kalicharan Saraf has been involved in initiatives addressing public health, social welfare, and youth empowerment. His efforts to enhance healthcare access, particularly in rural and underserved areas, have been instrumental in shaping Rajasthan’s health policies. Furthermore, his contributions to the educational sector include support for policies designed to increase educational opportunities and access to quality learning environments for young people in the state. 
+               </p>
+            </div>
+            <!-- Candidate Info for 2019 -->
+            <div class="info" id="candidate2019" style="display: none;">
+                <p>Kalicharan Saraf is a seasoned politician from Rajasthan, India, and a prominent leader within the Bharatiya Janata Party (BJP). With a political career spanning several decades, Saraf has held multiple significant positions in the Rajasthan state government and within his party. Known for his experience and dedication to public service, he has represented the Malviya Nagar constituency in the Rajasthan Legislative Assembly for several terms, demonstrating strong support from his constituency.Saraf has served as a cabinet minister in the Rajasthan government, overseeing key departments such as Health, Medical & Family Welfare, and Education. During his tenure, he focused on improving healthcare infrastructure, expanding educational resources, and implementing public welfare schemes aimed at uplifting the quality of life for residents across Rajasthan. 
+                    Respected for his approachability and commitment to his constituents, Kalicharan Saraf has been involved in initiatives addressing public health, social welfare, and youth empowerment. His efforts to enhance healthcare access, particularly in rural and underserved areas, have been instrumental in shaping Rajasthan’s health policies. Furthermore, his contributions to the educational sector include support for policies designed to increase educational opportunities and access to quality learning environments for young people in the state. 
+               </p>
+            </div>
+            <!-- Candidate Info for 2014 -->
+            <div class="info" id="candidate2014" style="display: none;">
+                <p>Kalicharan Saraf is a seasoned politician from Rajasthan, India, and a prominent leader within the Bharatiya Janata Party (BJP). With a political career spanning several decades, Saraf has held multiple significant positions in the Rajasthan state government and within his party. Known for his experience and dedication to public service, he has represented the Malviya Nagar constituency in the Rajasthan Legislative Assembly for several terms, demonstrating strong support from his constituency.Saraf has served as a cabinet minister in the Rajasthan government, overseeing key departments such as Health, Medical & Family Welfare, and Education. During his tenure, he focused on improving healthcare infrastructure, expanding educational resources, and implementing public welfare schemes aimed at uplifting the quality of life for residents across Rajasthan. 
+                    Respected for his approachability and commitment to his constituents, Kalicharan Saraf has been involved in initiatives addressing public health, social welfare, and youth empowerment. His efforts to enhance healthcare access, particularly in rural and underserved areas, have been instrumental in shaping Rajasthan’s health policies. Furthermore, his contributions to the educational sector include support for policies designed to increase educational opportunities and access to quality learning environments for young people in the state. 
+               </p>
+            </div>
+
+            <!-- Year Selection Buttons -->
+            <div class="year-selection">
+                <button id="can2024">2023-2024</button>
+                <button id="can2019">2018-2019</button>
+                <button id="can2014">2013-2014</button>
+            </div>
+           
+            <div class="comments">
+                <label for="comments">Comments:</label><br>
+<textarea id="commentInput" name="comments" rows="3" cols="10" placeholder="Enter your comments here..."></textarea><br>
+<div class="second-buttons">
+<button onclick="submitComment()">SUBMIT</button>
+</div>
+<div class="box">
+    <div id="commentBox"></div>
+
+</div>
+
+            </div>
+        </div>
+
+        <!-- Right Section for Image, Name, Party, and Vote Percentage -->
+        <div class="right-section">
+            <div class="image">
+                <div class="box1">
+                    <img src="malvya-nagar-map.jpeg">
+                </div>
+                <img class="red" src="kali-charan.webp" alt="Candidate Image" id="image">
+            </div>
+            <div class="name" id="name">Kalicharan Saraf</div>
+            <div class="party" id="party">(BJP)</div>
+            <div class="vote-percentage" id="voteper">
+                <table>
+                    <tr><th>Party</th><th>Vote %</th></tr>
+                    <tr><td>BJP</td><td> 47.13%</td></tr>
+                    <tr><td>INC</td><td>45.11%</td></tr>
+                    <tr><td>Other</td><td>7.76%</td></tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="candidate.js"></script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candidate Information</title>
+
+    <link rel="stylesheet" href="../css/candidates.css">
+</head>
+<body>
+    <button onclick="goBack()" class="back-button">⬅ Back</button>
+    <div class="container">
+        <!-- Left Section for Info and Year Selection -->
+        <div class="left-section">
+            <!-- Candidate Info for 2024 -- hawa mahel 2023>! -->
+            <div class="info" id="candidate2024">
+                <p>Chandra Manohar Batwara, a BJP candidate associated with the Rashtriya Swayamsevak Sangh, ran in the Kishanpole constituency in Jaipur. He has expressed a commitment to addressing key issues like regional development, safety, and curbing migration from the area. His background as a legal advocate and affiliation with local community interests contributed to his selection as a BJP candidate after the party decided to refresh their representation by choosing Batwara over the previous representative, Mohan Lal Gupta.In his campaign, Batwara emphasized the importance of prioritizing both development and security, aiming to represent the constituency's residents inclusively, regardless of religious or community demographics.
+
+</p>
+            </div>
+            <!-- Candidate Info for 2019 -->
+            <div class="info" id="candidate2019" style="display: none;">
+                <p>Amin Kagzi, a prominent politician in Rajasthan, represents the Kishan Pole constituency as a member of the Indian National Congress (INC). He has successfully won elections from this constituency multiple times, most recently in 2018 and 2023. In the 2018 election, Kagzi secured his seat by defeating Mohan Lal Gupta of the Bharatiya Janata Party (BJP) with a margin of 8,770 votes. Kagzi continued his winning streak in the 2023 election, again representing the INC and prevailing in a competitive race.He has a background in business, holds assets worth approximately ₹7.96 crore, and has no criminal cases reported against him. His education level is listed as Class XII, and he has been actively involved in addressing issues pertinent to his constituency.For more details on Amin Kagzis career and recent election performance, you may refer to sources like  and .
+
+</p>
+            </div>
+            <!-- Candidate Info for 2014 -->
+            <div class="info" id="candidate2014" style="display: none;">
+                <p>Amin Kagzi, a prominent politician in Rajasthan, represents the Kishan Pole constituency as a member of the Indian National Congress (INC). He has successfully won elections from this constituency multiple times, most recently in 2018 and 2023. In the 2018 election, Kagzi secured his seat by defeating Mohan Lal Gupta of the Bharatiya Janata Party (BJP) with a margin of 8,770 votes. Kagzi continued his winning streak in the 2023 election, again representing the INC and prevailing in a competitive race.He has a background in business, holds assets worth approximately ₹7.96 crore, and has no criminal cases reported against him. His education level is listed as Class XII, and he has been actively involved in addressing issues pertinent to his constituency.For more details on Amin Kagzi's career and recent election performance, you may refer to sources like  and .
+
+</p>
+            </div>
+
+            <!-- Year Selection Buttons -->
+            <div class="year-selection">
+                <button id="can2024">2023-2024</button>
+                <button id="can2019">2018-2019</button>
+                <button id="can2014">2013-2014</button>
+            </div>
+           
+            <div class="comments">
+                <label for="comments">Comments:</label><br>
+<textarea id="comments" name="comments" rows="3" cols="10" placeholder="Enter your comments here..."></textarea><br>
+<div class="second-buttons">
+<button class="reset">RESET</button><button class="submit">SUBMIT</button>
+</div>
+<div class="box">
+    5 star commented
+</div>
+
+            </div>
+        </div>
+
+         <!-- Right Section for Image, Name, Party, and Vote Percentage -->
+        <div class="right-section">
+            <div class="image">
+                <div class="box1">
+                    <img src="../images/kishan pole.png">
+                </div>
+                <img class="red" src="../images/Chandra Manohar Batwara.jpg" alt="Candidate Image" id="image">
+            </div>
+            <div class="name" id="name">Chandra Manohar Batwara</div>
+            <div class="party" id="party">(BJP)</div>
+            <div class="vote-percentage" id="voteper">
+                <table>
+                    <tr><th>Party</th><th>Vote %</th></tr>
+                    <tr><td>INC</td><td> (40.52%) </td></tr>
+                    <tr><td>BJP</td><td>(56.80%)  </td></tr>
+                    <tr><td>Other</td><td>  (1.07%) </td></tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="../JS files/candidate1.js"></script>
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Page with Hover Effects</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nabla&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+        /* Basic page setup */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            /* font-family: 'Arial', sans-serif; */
+            font-family: "Sour Gummy", sans-serif;
+        }
+
+        /* Container for the background image */
+        .container {
+            position: relative;
+            height: 100vh;
+            background-image: url('../images/rajs.jpeg'); /* Initial background image */
+            background-size:cover;
+            background-position: center;
+            transition: background-image 1s ease, transform 0.5s ease; /* Smooth transition */
+        }
+
+        /* Background image change on hover */
+        .container:hover {
+            background-image: url('../images/pexels-weddingphotography-29368152.jpg'); /* Change background on hover */
+            transform: scale(1); /* Slight zoom effect on hover */
+            transition: 1s;
+        }
+
+        /* Centered image */
+        .center-image {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-30%, -30%);
+            max-width: 80%;
+            height: auto;
+            transition: transform 1.5s ease, opacity 0.5s ease; /* Smooth transition for scaling */
+            cursor: pointer;
+            filter: drop-shadow(10px 10px 4px #000000);
+
+        }
+
+
+        /* Centered image zoom-in effect on hover */
+        .container:hover .center-image {
+            transform: translate(-30%, -30%) scale(1.1); /* Zoom effect */
+            opacity: 0.9; /* Slight fade-out effect */
+        }
+
+        /* Logo in the top-left corner */
+        .logo {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            margin:30px ;
+            width: 300px;
+            height: auto;
+            transition: transform 0.3s ease, filter 0.3s ease; /* Smooth transition for logo hover */
+        }
+
+        /* Logo hover effect */
+        .logo:hover {
+            transform: scale(1.1); /* Slightly enlarge the logo */
+            filter: drop-shadow(10px 6px 5px rgba(69, 75, 76, 0.7)); /* Glow effect */
+            cursor: pointer;
+            color:rgba(236, 7, 53, 0.895);
+        }
+
+        /* Description box in the bottom-right corner */
+        .description-box {
+            position: absolute;
+            bottom: 40px;
+            right: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 20px;
+            max-width: 300px;
+            font-size: 16px;
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease; /* Smooth transition */
+        }
+
+        /* Description box hover effect */
+        .description-box:hover {
+            transform: translateY(-5px); /* Slight move-up effect */
+            /* box-shadow: 0 0 20px rgba(255, 255, 255, 0.3); Glowing shadow */
+            box-shadow: 0 0 20px rgba(236, 7, 53, 0.895)  ;/* Slightly enlarge on hover */
+            background-color: rgba(0, 0, 0, 0.9); /* Darker background on hover */
+        }
+
+        /* Heading inside description box */
+        .description-box h2 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        /* Text inside description box */
+        .description-box p {
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Main container with background image -->
+    <div class="container">
+        <!-- Logo in the top-left corner -->
+        <!-- <img src="logo.png" alt="Logo" class="logo"> -->
+        <span class="logo"> <h1 >POLI-INFO Website</h1>
+         (Jaipur reign)</span>
+
+        <!-- Centered image -->
+        <a href="./poli-divide.html"><img src="../images/jaipur-removebg-preview.png" alt="Center Image"  class="center-image"></a>    
+
+        <!-- Description box in the bottom-right corner -->
+        <div class="description-box">
+            <h2>Political Information available here</h2>
+            <p>This website is sole-ly constructed to serve the purpose of information about political areas details like:-winning candidates,votes,area-history</p>
+        </div>
+    </div>
+
+</body>
+<script>
+    // JavaScript function to redirect to another page
+    function redirectToPage() {
+        // Define the URL of the next page
+        const nextPageUrl = './poli-divide.html'; // Replace with your target page URL
+        window.location.href = nextPageUrl; // Redirect to the next page
+    }
+</script>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candidate Information</title>
+
+    <link rel="stylesheet" href="../css/candidates.css">
+</head>
+<body>
+    <button onclick="goBack()" class="back-button">⬅ Back</button>
+    <div class="container">
+        <!-- Left Section for Info and Year Selection -->
+        <div class="left-section">
+            <!-- Candidate Info for 2024 -->
+            <div class="info" id="candidate2024">
+                <p>Kailash Chand Verma (30 June 1985) is an Indian politician currently serving as a Member of the Rajasthan Legislative Assembly, 14th & 16th from Bagru. He is former serving Parliamentary Secretary, Government of Rajasthan. He is Member of the Bhartiya Janta Party.
+
+                    Following the 2023 Rajasthan Legislative Assembly election, he was elected as an MLA from the Bagru Assembly constituency Assembly, defeating Ganga Devi Verma, the candidate from the Indian National Congress (INC), by 45,250 votes
+                    Kailash Chand Verma is a prominent Indian politician and current Member of the Rajasthan Legislative Assembly, representing the Bagru constituency. He resumed office on December 3, 2023, succeeding Ganga Devi, who also preceded him in this role both before his 2013–2018 term and immediately prior to his current term. Verma has a longstanding political career with the Bharatiya Janata Party (BJP) and served as the Parliamentary Secretary in the Government of Rajasthan from December 10, 2016, to December 17, 2018.
+
+                    Born on June 30, 1985, in Nimeda, Jaipur, Rajasthan, Kailash Chand Verma has deep roots in his region. He pursued higher education, completing both a Master’s degree and a Ph.D. from the University of Rajasthan. Verma's family includes his spouse, Sita Devi, and their child. His parents, Prabhu Dayal Verma and Heera Devi Verma, have been influential figures in his life. Known for his dedication to public service, Verma continues to focus on the development and welfare of his constituency as he works to further the objectives of his party and serve his community effectively. </p>
+            </div>
+            <!-- Candidate Info for 2019 -->
+            <div class="info" id="candidate2019" style="display: none;">
+                <p>Ganga Devi is a 65-year-old Indian politician affiliated with the Indian National Congress (INC) and represents the Bagru constituency, a Scheduled Caste (SC) reserved seat in Jaipur, Rajasthan. She is registered as a voter in the Bagru constituency, with her name appearing at serial number 172 in part number 56. Ganga Devi is the daughter of the late Kajodi Lal Verma. She has dedicated herself to both household responsibilities and social work, embodying a commitment to her community's welfare and upliftment.
+
+                    Her late spouse was also actively involved in her journey, and she continues to honor his legacy through her public service. Ganga Devi's background as a housewife and social worker provides her with a unique perspective on the needs of her constituency, and she remains committed to advocating for the marginalized and promoting social equity as a representative of the INC in the Rajasthan Legislative Assembly.</p>
+            </div>
+            <!-- Candidate Info for 2014 -->
+            <div class="info" id="candidate2014" style="display: none;">
+                <p>Kailash Chand Verma (30 June 1985) is an Indian politician currently serving as a Member of the Rajasthan Legislative Assembly, 14th & 16th from Bagru. He is former serving Parliamentary Secretary, Government of Rajasthan. He is Member of the Bhartiya Janta Party.
+
+                    Following the 2023 Rajasthan Legislative Assembly election, he was elected as an MLA from the Bagru Assembly constituency Assembly, defeating Ganga Devi Verma, the candidate from the Indian National Congress (INC), by 45,250 votes
+                    Kailash Chand Verma is a prominent Indian politician and current Member of the Rajasthan Legislative Assembly, representing the Bagru constituency. He resumed office on December 3, 2023, succeeding Ganga Devi, who also preceded him in this role both before his 2013–2018 term and immediately prior to his current term. Verma has a longstanding political career with the Bharatiya Janata Party (BJP) and served as the Parliamentary Secretary in the Government of Rajasthan from December 10, 2016, to December 17, 2018.
+
+                    Born on June 30, 1985, in Nimeda, Jaipur, Rajasthan, Kailash Chand Verma has deep roots in his region. He pursued higher education, completing both a Master’s degree and a Ph.D. from the University of Rajasthan. Verma's family includes his spouse, Sita Devi, and their child. His parents, Prabhu Dayal Verma and Heera Devi Verma, have been influential figures in his life. Known for his dedication to public service, Verma continues to focus on the development and welfare of his constituency as he works to further the objectives of his party and serve his community effectively.</p>
+            </div>
+
+            <!-- Year Selection Buttons -->
+            <div class="year-selection">
+                <button id="can2024">2023-2024</button>
+                <button id="can2019">2018-2019</button>
+                <button id="can2014">2013-2014</button>
+            </div>
+           
+            <div class="comments">
+                <label for="comments">Comments:</label><br>
+<textarea id="comments" name="comments" rows="3" cols="10" placeholder="Enter your comments here..."></textarea><br>
+<div class="second-buttons">
+<button class="reset">RESET</button><button class="submit">SUBMIT</button>
+</div>
+<div class="box">
+    5 star commented
+</div>
+
+            </div>
+        </div>
+
+        <!-- Right Section for Image, Name, Party, and Vote Percentage -->
+        <div class="right-section">
+            <div class="image">
+                <div class="box1">
+                    <img src="../images/bhagru.jpg">
+                </div>
+                <img class="red" src="../images/kailashchand.jpg" alt="Candidate Image" id="image">
+            </div>
+            <div class="name" id="name">Kailash Chand Varma</div>
+            <div class="party" id="party">(BJP)</div>
+            <div class="vote-percentage" id="voteper">
+                <table>
+                    <tr><th>Party</th><th>Vote %</th></tr>
+                    <tr><td>BJP</td><td>56.54%</td></tr>
+                    <tr><td>INC</td><td>38.92%</td></tr>
+                    <tr><td>Other</td><td>04.54%</td></tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="../JS files/candidate.js"></script>
+</body>
+</html>
